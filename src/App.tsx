@@ -13,7 +13,7 @@ const App = () => {
         <Router>
             <div className="app">
                 <Navbar />
-                <main>
+                    <main className="py-20 from-gray-900 to-gray-800 px-4">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/booking" element={<BookingForm />} />

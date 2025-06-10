@@ -73,7 +73,7 @@ const Footer = () => {
 
 
                 <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-400 text-sm">
-                    <p>© {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Cyprien, Léna, Tiago company. All rights reserved.</p>
                 </div>
             </div>
         </footer>
