@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SessionCard = ({ session }: { session: Session }) => {
     return (
-        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1 mt-8">
             <img
                 src={session.image}
                 alt={session.title}

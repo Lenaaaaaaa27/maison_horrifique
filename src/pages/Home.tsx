@@ -76,7 +76,7 @@ const Home = () => {
                     </div>
 
                     <div className="text-center mt-12">
-                        <a href="/sessions" className="inline-block px-8 py-3 border-2 border-red-600 text-red-600 font-bold rounded-lg hover:bg-red-600 hover:text-white transition duration-300">
+                        <a href="/sessions" className="inline-block px-8 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 hover:text-white transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                             Voir toutes les sessions
                         </a>
                     </div>

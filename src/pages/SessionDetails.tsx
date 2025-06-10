@@ -2,8 +2,8 @@
 import { useParams } from 'react-router-dom';
 import { sessions } from '../data/sessions';
 import { Link } from 'react-router-dom';
-import houseImage from '../images/house.jpg';
-import asylumImage from '../images/asylum.jpg';
+import houseImage from '../images/house.png';
+import asylumImage from '../images/asylum.png';
 
 const SessionDetails = () => {
     const { id } = useParams<{ id: string }>();

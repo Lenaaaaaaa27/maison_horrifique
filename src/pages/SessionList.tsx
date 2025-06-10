@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const SessionsList = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-12 bg-gradient-to-b from-gray-900 to-gray-800">
             <div className="text-center mb-12">
-                <h1 className="text-4xl font-bold text-gray-800 mb-4">Nos sessions d'escape game</h1>
-                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                <h1 className="text-4xl font-bold text-white mb-4">Nos sessions d'escape game</h1>
+                <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                     Découvrez nos aventures immersives qui vous transporteront dans des mondes extraordinaires
                 </p>
             </div>
@@ -22,7 +22,7 @@ const SessionsList = () => {
             <div className="text-center">
                 <Link
                     to="/"
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition-colors duration-300"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300"
                 >
                     ← Retour à l'accueil
                 </Link>
