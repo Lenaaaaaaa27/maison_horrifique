@@ -29,8 +29,6 @@ const BookingForm = () => {
                         required
                     />
                 </div>
-
-
                 <button type="submit" className="btn">Réserver</button>
             </form>
         </div>

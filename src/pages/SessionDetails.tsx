@@ -2,6 +2,8 @@
 import { useParams } from 'react-router-dom';
 import { sessions } from '../data/sessions';
 import { Link } from 'react-router-dom';
+import houseImage from '../images/house.jpg';
+import asylumImage from '../images/asylum.jpg';
 
 const SessionDetails = () => {
     const { id } = useParams<{ id: string }>();
@@ -34,7 +36,7 @@ const SessionDetails = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
                     <div className="relative overflow-hidden rounded-xl shadow-2xl">
                         <img
-                            src={session.image}
+                            src={session.id === 1 ? houseImage : asylumImage}
                             alt={session.title}
                             className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
                         />

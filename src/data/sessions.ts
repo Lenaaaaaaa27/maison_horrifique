@@ -8,7 +8,7 @@ export const sessions: Session[] = [
         duration: 60,
         difficulty: "Moyen",
         maxPlayers: 6,
-        image: "src/images/house.jpg"
+        image: "./src/images/house.jpg"
     },
     {
         id: 2,
@@ -17,6 +17,6 @@ export const sessions: Session[] = [
         duration: 90,
         difficulty: "Difficile",
         maxPlayers: 8,
-        image: "src/images/asylum.jpg"
+        image: "./src/images/asylum.jpg"
     },
 ];
