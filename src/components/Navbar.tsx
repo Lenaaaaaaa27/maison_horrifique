@@ -1,16 +1,32 @@
 import { Link } from 'react-router-dom';
+import {useEffect, useState} from "react";
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="bg-black text-white px-6 py-4 shadow-lg">
-            <div className="max-w-6xl mx-auto flex items-center justify-between">
-                <Link to="/" className="text-2xl font-bold tracking-wide hover:text-red-500 transition duration-300">
+        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+            <div className="navbar-content">
+                <Link to="/" className="navbar-brand">
                     La Maison Horrifique
                 </Link>
-                <div className="flex space-x-6 text-lg">
-                    <Link to="/booking" className="hover:text-red-400 transition duration-300">Réservation</Link>
-                    <Link to="/sessions" className="hover:text-red-400 transition duration-300">Sessions</Link>
-                    <Link to="/contact" className="hover:text-red-400 transition duration-300">Contact</Link>
+                <div className="nav-links">
+                    <Link to="/booking" className="nav-link">Réservation</Link>
+                    <Link to="/sessions" className="nav-link">Sessions</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                 </div>
             </div>
         </nav>

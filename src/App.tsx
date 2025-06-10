@@ -11,7 +11,7 @@ import SessionsList from "./pages/SessionList.tsx";
 const App = () => {
     return (
         <Router>
-            <div className="app">
+            <div className="app min-h-screen flex flex-col">
                 <Navbar />
                 <main>
                     <Routes>
