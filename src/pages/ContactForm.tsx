@@ -15,7 +15,7 @@ const ContactForm = () => {
         e.preventDefault();
         setIsLoading(true);
 
-        // Simulate API call
+        // Ca c'est pour simuler une api en back.
         await new Promise(resolve => setTimeout(resolve, 1000));
 
         console.log('Message envoyé:', formData);

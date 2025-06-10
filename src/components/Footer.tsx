@@ -5,7 +5,6 @@ const Footer = () => {
         <footer className="bg-gray-900 text-white py-12 px-4 mt-16 border-t border-gray-700">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-                    {/* Navigation Links */}
                     <div className="flex flex-col sm:flex-row gap-6 text-center sm:text-left">
                         <div className="space-y-2">
                             <h3 className="font-semibold text-gray-400 uppercase tracking-wider text-sm mb-3">Navigation</h3>
@@ -32,7 +31,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Social Links */}
                     <div className="flex flex-col items-center md:items-end">
                         <h3 className="font-semibold text-gray-400 uppercase tracking-wider text-sm mb-4">Follow Us</h3>
                         <div className="flex space-x-6">
@@ -73,7 +71,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Copyright */}
                 <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-400 text-sm">
                     <p>© {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
                 </div>

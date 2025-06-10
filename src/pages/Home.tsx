@@ -4,7 +4,6 @@ import SessionCard from '../components/SessionCard';
 const Home = () => {
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/images/horror-bg.jpg')] bg-cover bg-center opacity-30"></div>
                 <div className="relative z-10 text-center px-4 max-w-4xl">
@@ -25,7 +24,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* About Section */}
             <section className="py-20 px-4 max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -83,7 +81,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Contact Info */}
             <section className="py-20 px-4 bg-gray-900 text-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
