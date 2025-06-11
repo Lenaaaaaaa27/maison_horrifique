@@ -31,7 +31,7 @@ const BookingForm = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+        <div className="max-w-md mx-auto py-12 px-6 bg-white rounded-lg shadow-md mt-16 mb-16">
             {!isSubmitted ? (
                 <>
                     <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Réserver une session</h2>
