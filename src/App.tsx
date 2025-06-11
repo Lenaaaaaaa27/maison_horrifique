@@ -13,7 +13,7 @@ const App = () => {
         <Router>
             <div className="app">
                 <Navbar />
-                    <main className="px-4">
+                    <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/booking" element={<BookingForm />} />
